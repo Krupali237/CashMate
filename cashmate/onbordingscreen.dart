@@ -174,7 +174,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                           if (onLastPage) {
                             final prefs = await SharedPreferences.getInstance();
                             await prefs.setBool('onboarding_complete', true);
-                            Get.offAllNamed('/LoginView');
+                            Get.offAllNamed('/SignUpView');
                           } else {
                             _controller.nextPage(
                               duration: 300.ms,
